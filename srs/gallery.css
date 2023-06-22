@@ -1,0 +1,548 @@
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* position: relative; */
+}
+.logo{
+	width: 70%;
+	background: white;
+	border-radius: 16px;
+}
+.contacts{
+	display: flex;
+	justify-content: space-evenly;
+}
+header{
+	background: rgba(0, 0, 0, 0.7);
+	/* border: 2px solid white;  */
+	border-radius: 0 0 16px 16px;
+	color: white;
+	width: 100%;
+	padding: 0 10px 0 10px;
+	font-size: 25px;
+}
+.menu-list{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.menu-list li a {
+	text-decoration: none;
+	color: white;
+	
+}
+@keyframes logos-move {
+	0% {
+	  opacity: 0;
+	  margin-top: -100px;
+	}
+	50% {
+	  margin-bottom: 20px;
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	  margin-top: 0px;
+	}
+  }
+
+  .logos-move-for-1 {
+	opacity: 0;
+	animation: logos-move 0.8s ease forwards;
+  }
+  .logos-move-for-2 {
+	opacity: 0;
+	animation: logos-move 1.2s ease forwards;
+  }
+  .menu-list .logos-move-for-3 {
+	opacity: 0;
+	animation: logos-move 1.2s ease forwards;
+  }
+  .menu-list .logos-move-for-4 {
+	opacity: 0;
+	animation: logos-move 1.6s ease forwards;
+  }
+  .menu-list .logos-move-for-5 {
+	opacity: 0;
+	animation: logos-move 2s ease forwards;
+  }
+  .menu-list .logos-move-for-6 {
+	opacity: 0;
+	animation: logos-move 2.4s ease forwards;
+  }
+  .menu-list .logos-move-for-7 {
+	opacity: 0;
+	animation: logos-move 2.8s ease forwards;
+  }
+  .menu-list .logos-move-for-8 {
+	opacity: 0;
+	animation: logos-move 3.2s ease forwards;
+  }
+  a{
+	color: white;
+	text-decoration: none;
+}
+.mob-menu{
+	background: rgba(0, 0, 0, 0.7);
+	border-left: 2px solid gold;
+	/* border-top: 2px solid gold; */
+	height: 100vh;
+	width: 40vh;
+	position: fixed;
+	top: 0;
+	right: -40vh;
+	z-index: 200;
+	transition: right 0.5s ease-in-out
+	
+}
+.show-mob-menu-animation{
+	
+	right: 0vh;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.top-bar{
+    background: grey;
+    flex-grow: 3;
+    padding: 15px;
+
+    height: 30vh;
+}
+.main-content{
+    margin: auto;
+    width: 80vw;
+    margin-top: 20px;
+    border-radius: 16px;
+    flex-grow: 5;
+    color: black;
+}
+.all-images{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.left-img-item{
+    height: 30vh;
+    width: 20vw;
+}
+
+.accord{
+    background: #000;
+}
+.card-box{
+    display: flex;
+}
+.description{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.type-of{
+    font-weight: bold;
+}
+.roomsAmount{
+    font-weight: bold;
+}
+.areaInKv{
+    font-weight: bold;
+}
+.text{
+    font-weight: bold;
+}
+span{
+    font-weight: normal;
+}
+.inner-img{
+    width: 15vw;
+    margin: 10px;
+}
+.inner-img:hover{
+    scale: 1.1;
+    transition: scale 0.5s;
+}
+
+/* carousel */
+
+/* carousel-end */
+
+
+.tp-back{
+    text-align: start;
+    float: left;
+    padding-right: 10%;
+}
+
+@keyframes showmobmenu{
+	from{
+		right: -40
+	}
+	to{
+		right: 0;
+	}
+}
+.mob-menu{
+	padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mob-menu ul hr{
+	border: 1px solid gold;
+	width: 100%;
+}
+.menu-list-mob{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	
+	padding: 5%;
+
+}
+.back-to-main{
+    display: none;
+    margin-left: 2vh;
+    margin-top: 10px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 8px;
+}
+@media screen and (max-width: 1600px)  {
+	header{
+		font-size: 20px;
+	}
+	.list-of-pocket{
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width:1400px) {
+	#FormaHeadTittle{
+		font-size:28px;
+	}
+	.totalPrice{
+		font-size: 25px;
+	}
+	.show-pocket-desc{
+		height: 72%;
+	}
+	.froma-zayavki-box{
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 1200px)  {
+	header{
+		font-size: 16px;
+	}
+	.titles{
+		font-size: 22px;
+	}
+	#FormaHeadTittle{
+		font-size:25px;
+	}
+	.totalPrice{
+		font-size: 22px;
+	}
+	.spec-icon-desc{
+		font-size: 22px;
+	}
+	.froma-zayavki-box{
+		width: 80%;
+	}
+	.box2-tittle h2{
+		font-size: 27px;
+		color: black;
+	}
+	.name-of-pocket{
+		font-size: 22px;
+	}
+	.list-of-pocket{
+		font-size: 18px;
+	}
+	.error{
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+	.calculator-1part{
+		padding-top: 15%;
+	}
+	.froma-zayavki-box{
+		width: 90%;
+	}
+	.box2-tittle h2{
+		font-size: 25px;
+		color: black;
+	}
+	.box2-pocket-tittle{
+		margin: auto;
+		width: 40%;
+		background: white;
+		color: black;
+		padding: 10px;
+		border-radius: 8px;
+		border: 1px solid white;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 880px){
+	.spec-icon-desc{
+		font-size: 18px;
+	}
+	.box2-pocket-tittle h2{
+		font-size: 22px;
+		color: black;
+	}
+	.econom-image-block:hover{
+		scale: 1.050;
+		transition: scale 0.5s;
+	}
+	.whats-up-cont-box{
+		position: fixed;
+		z-index: 99;
+		bottom: 2vh;
+		left: 2vh;
+		width: 8vh;
+	
+		animation-name: jumping-button;
+		
+	}
+	.back-to-up{
+		position: fixed;
+		z-index: 89;
+		bottom: 2vh;
+		right: 2vh;
+		width: 8vh;
+		
+		animation-name: jumping-button;
+	}
+}
+@media screen and (max-width:768px) {
+	.box2-pocket-tittle{
+		margin: auto;
+		width: 50%;
+		background: white;
+		color: black;
+		padding: 10px;
+		border-radius: 8px;
+		border: 1px solid white;
+		text-align: center;
+		margin-bottom: 1vh;
+	}
+	.pocket-container{
+		background: rgba(255, 255, 255, 0.5);
+		padding: 10px;
+		/* border: 4px solid rgb(164, 164, 164); */
+		border-radius: 16px;
+	}
+	.froma-zayavki-box{
+		width: 100%;
+		padding-top: 1vh;
+	}
+	a .whats-up-cont{
+		width: 100%;
+	}
+	.back-to-menu-icon{
+		width: 100%;
+	}
+	.box2-pocket-tittle h2{
+		font-size: 25px;
+		color: black;
+	}
+	#AreaType{
+		/* margin-top: 8px; */
+		/* display: flex; */
+		padding: 6px;
+		border-radius: 6px;
+		width: 40vh;
+		text-align: center;
+		float: none;
+
+	}
+	.type-selecter{
+		display: flex;
+		justify-content: center;
+	}
+	.aps-range{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#designOfProject{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo{
+		width: 80%;
+	}
+    .main-content{
+        margin: auto;
+        width: 100vw;
+        margin-top: 20px;
+        border-radius: 16px;
+        flex-grow: 5;
+        color: black;
+    }
+    .left-img-item{
+        width: 35vw;
+    }
+    .inner-img{
+        margin: 5px;
+        width: 40%;
+    }
+    .card-box{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+	.calculator-1part{
+		padding-top: 20%;
+	}
+	/* .mob-area-type{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	} */
+	.title-type-of-area{
+		white-space: nowrap;
+	}
+	.logo{
+		width: 100%;
+	}
+	#countRoom{
+		text-align: center;
+		width: 160px;
+		border-radius: 8px;
+		
+	}
+	.input-kv{
+		width: 160px;
+	}
+	.spec-icon-desc{
+		font-size: 14px;
+	}
+
+
+}
+@media screen and (max-width:575px){
+	/* .mob-pockets-all{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 70vh;
+	} */
+	.pocket-container{
+		background: rgba(255, 255, 255, 0.5);
+		padding: 10px;
+		/* border: 4px solid rgb(164, 164, 164); */
+		border-radius: 16px;
+		width: 80vh;
+	}
+	.froma-zayavki-box{
+		width: 100%;
+		padding: 2vh;
+	}
+    .tp-back{
+        display: none;
+    }
+    .back-to-main{
+        display: block;
+        margin-left: 2vh;
+        margin-top: 10px;
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        padding: 8px;
+        width: 30vh;
+    }
+	/* .logo{
+
+	} */
+}
+@media screen and (max-width:460px){
+	.froma-zayavki-box{
+		width: 100%;
+		margin-top: 2vh;
+	}
+	.logo{
+		width: 100%;
+	}
+}
+@media screen and (max-width:400px){
+	.froma-zayavki-box{
+		width: 100%;
+		margin-top: 10vh;
+	}
+	#countRoom{
+		width: 130px;
+		
+	}
+	.input-kv{
+		width: 130px;
+	}
+	.spec-icon-desc{
+		font-size: 12px;
+	}
+	#FormaHeadTittle{
+		font-size:22px;
+	}
+	.totalPrice{
+		font-size: 20px;
+	}
+	.titles{
+		font-size: 20px;
+	}
+	.box2-pocket-tittle h2{
+		font-size: 20px;
+		color: black;
+	}
+	.mob-titles{
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	.title-type-of-area{
+		white-space: normal;
+	}
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .left-img-item{
+        width: 80vw;
+    }
+    .tp-back{
+        font-size: 14px;
+        display: none;
+    }
+    .slogan-company{
+        font-size: 14px;
+    }
+	.inner-img{
+        margin: 5px;
+        width: 45%;
+    }
+
+}
+

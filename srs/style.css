@@ -1,0 +1,1068 @@
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* position: relative; */
+}
+.red-allert{
+	background-color: rgba(255, 0, 0, 0.7);
+	border-radius: 16px;
+	animation-name: red-allert-hide; 
+	animation-duration: 1s;
+}
+@keyframes red-allert-hide {
+	0%{
+	background-color: rgba(255, 0, 0, 0.7);
+
+	}
+	100%{
+		background: none;
+	}
+}
+.succes{
+	color: green;
+	font-size: px;
+}
+.error{
+	font-size: 25px;
+	color: red;
+}
+.whats-up-cont{
+	width: 100%;
+}
+.whats-up-cont-box{
+	position: fixed;
+	z-index: 99;
+	bottom: 2vh;
+	left: 2vh;
+	width: 13vh;
+
+	animation-name: jumping-button;
+	
+}
+.back-to-menu-icon{
+	width: 100%;
+	float: right;
+	background: white;
+	border-radius: 18px;
+	padding: 10px;
+	
+}
+.back-arrow-run{
+	animation: arrowrun 1s;
+}
+@keyframes arrowrun {
+	0%{
+		margin-bottom: 0;
+	}
+	50%{
+		margin-bottom: 40px;
+	}
+	100%{
+		margin-bottom: 0;
+	}
+}
+
+
+
+.back-to-up{
+	position: fixed;
+	z-index: 89;
+	bottom: 2vh;
+	right: 2vh;
+	width: 13vh;
+	
+	animation-name: jumping-button;
+}
+
+.slow-hide{
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+	animation-name: toslowhide;
+/* 
+	scale: 0;
+	transition: scale 1s; */
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: all 2s;
+}
+@keyframes toslowhide{
+	0%{
+		height: 100%;
+		opacity: 1;
+	}
+	50%{
+		height: 50%;
+		opacity: 0.5;
+	}
+	100%{
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+	}
+}
+.scale{
+	scale: 0;
+}
+.slow-show{
+	/* animation-duration: 1s;
+	animation-delay: 0.2s;
+	animation-name: toslowshow; */
+	scale: 1;
+	transition: scale 1s;
+}
+@keyframes toslowshow{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+.logo{
+	width: 70%;
+	background: white;
+	border-radius: 16px;
+}
+.contacts{
+	display: flex;
+	justify-content: space-evenly;
+}
+.page1ofCalc{
+	/* opacity: 1; */
+	height: auto;
+	transition: opacity 0.9s ease, height 0.9s ease;
+}
+.totalPrice{
+	text-align: center;
+	color: white;
+}
+.tohidecalc{
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.overhte1part{
+	position: absolute;
+	left: 35%;
+}
+.calculator-2part{
+	width: 100%;
+	transition: opacity 0.9s ease, height 0.9s ease;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.back-and-wp{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+input{
+	border-radius: 6px;
+	border: 1px solid white;
+	/* padding-left: 5 qpx; */
+	width: 30vh;
+}
+.kvInNup{
+	padding: 2px;
+}
+.show2pageofcalc{
+	height: auto;
+	opacity: 1;
+	transition: all 1s;
+}
+
+.secondPageofCalc{
+	text-align: center;
+	display: block;
+	color: white;
+	background: gold;
+	padding: 6px;
+	border-radius: 8px;
+	font-weight: bold;
+	border: 1px white solid;
+	cursor: pointer;
+
+}
+.showthefirstpage{
+	text-align: center;
+	display: block;
+	color: white;
+	background: gold;
+	padding: 6px;
+	border-radius: 8px;
+	font-weight: bold;
+	border: 1px white solid;
+	cursor: pointer;
+	width: 50vh;
+}
+
+ #submit{
+	text-align: center;
+	display: block;
+	color: white;
+	background: gold;
+	padding: 6px;
+	border-radius: 8px;
+	font-weight: bold;
+	border: 1px white solid;
+	cursor: pointer;
+	width: 100%;
+	
+ }
+.header-bg{
+	background: rgba(0, 0, 0, 0.8);
+
+}
+.f-s-40{
+	font-size: 50px;
+	position: relative;
+	top: 50px;
+	left: 0;
+}
+header{
+	background: rgba(0, 0, 0, 0.3);
+	/* border: 2px solid white;  */
+	border-radius: 0 0 16px 16px;
+	color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	padding: 0 10px 0 10px;
+	font-size: 25px;
+}
+.menu-list{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.menu-list li a {
+	text-decoration: none;
+	color: white;
+	
+}
+
+@keyframes logos-move {
+	0% {
+	  opacity: 0;
+	  margin-top: -100px;
+	}
+	50% {
+	  margin-bottom: 20px;
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	  margin-top: 0px;
+	}
+  }
+
+  .logos-move-for-1 {
+	opacity: 0;
+	animation: logos-move 0.8s ease forwards;
+  }
+  .logos-move-for-2 {
+	opacity: 0;
+	animation: logos-move 1.2s ease forwards;
+  }
+  .menu-list .logos-move-for-3 {
+	opacity: 0;
+	animation: logos-move 1.2s ease forwards;
+  }
+  .menu-list .logos-move-for-4 {
+	opacity: 0;
+	animation: logos-move 1.6s ease forwards;
+  }
+  .menu-list .logos-move-for-5 {
+	opacity: 0;
+	animation: logos-move 2s ease forwards;
+  }
+  .menu-list .logos-move-for-6 {
+	opacity: 0;
+	animation: logos-move 2.4s ease forwards;
+  }
+  .menu-list .logos-move-for-7 {
+	opacity: 0;
+	animation: logos-move 2.8s ease forwards;
+  }
+  .menu-list .logos-move-for-8 {
+	opacity: 0;
+	animation: logos-move 3.2s ease forwards;
+  }
+
+
+
+.box1{
+	/* background-image: url(/images/bg/1678197515198.png); */
+	background-image: url(/images/фон\ сайта.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* padding-bottom: 10px; */
+
+}
+
+.bg-layer{
+	background: rgba(0, 0, 0, 0.5);
+	width: inherit;
+	height: 100%;
+}
+.calculator-1part{
+	padding-top: 10%;
+	padding-bottom: 20px;
+	/* background: rgba(0, 0, 0, 0.3); */
+	/* padding: 30px; */
+}
+#FormaHeadTittle{
+	border: 2px ;
+	color: white;
+	text-align: center;
+}
+.froma-zayavki-box{
+	margin: auto;
+	width: 60%;
+	/* height: 30vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: rgba(0, 0, 0, 0.3);
+	
+	
+
+}
+/* .page2ofcalc{
+
+} */
+/* #RoomCount{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+#countRoom{
+	text-align: center;
+	width: 200px;
+	border-radius: 8px;
+	font-size: 23px;
+}
+.typeOfArea{
+	font-size: 25px;
+	
+	/* display: flex;
+	justify-content: space-between;
+	align-items: center; */
+}
+#AreaType{
+	/* margin-top: 8px; */
+	/* display: flex; */
+	padding: 6px;
+	border-radius: 6px;
+	width: 200px;
+	text-align: center;
+	float: right;
+
+}
+#KvRange{
+	margin: 10px;
+
+		/* font-size: 25px; */
+}
+.titles{
+	font-size: 25px;
+	text-align: center;
+}
+.align-items-cent{
+	display: flex;
+	align-items: center;
+}
+.aps-range{
+	display: flex;
+	align-items: first baseline;
+	justify-content: space-between;
+}
+#designOfProject{
+	padding-top: 5px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#selectOfPockets{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.pocket-box{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+#countRoom{
+	display: flex;
+}
+.froma-zayavki-box{
+	color: white;
+}
+.designpocket{
+
+	cursor: pointer;
+	border-radius: 6px;
+	
+}
+.picketPacket{
+	
+	border: 2px solid white;
+	scale: 1.1;
+	transition: scale 0.5s;
+}
+/* gl pockets */
+
+
+.info-middle{
+	background: rgb(59, 59, 59);
+	width: 100%;
+	padding: 15px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+.middle-info-right{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.little-icon{
+	width: 40%;
+	padding: 10px;
+}
+
+.box2{
+	padding: 10px;
+	background-image: url(/images/2bg.webp);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	perspective: 1px;
+
+}
+.box2-tittle{
+	width: 100%;
+	text-align: center;
+	color: white;
+	color: black;
+}
+.pocket-container{
+	background: rgba(255, 255, 255, 0.3);
+	padding: 10px;
+	/* border: 4px solid rgb(164, 164, 164); */
+	border-radius: 16px;
+}
+.name-of-pocket{
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bolder;
+}
+.pockets-price{
+	text-align: center;
+	font-weight: bolder;
+	font-size: larger;
+}
+.list-of-pocket{
+	list-style: none;
+	color: white;
+	font-size: 25px;
+}
+.pocket-description{
+	margin-top: 5px;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	overflow: hidden;
+	height: 0;
+	transition: height 500ms ease;
+	
+}
+
+.show-pocket-desc{
+	height: 66%;
+	overflow: visible;
+	/* transition: all 3s linear ; */
+	transition: height .3s ease-in-out;
+	/* animation: example 1s ; */
+}
+@keyframes example {
+	0%{
+		overflow: hidden;
+		height: 0;
+	}
+	100%{
+		overflow: visible;
+		height: auto;
+	}
+	
+  }
+.econom-image-block{
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.econom-image-block:hover{
+	scale: 1.1;
+	transition: scale 0.5s;
+}
+
+
+.companyamount-line{
+	display: flex;
+}
+.spec-icon{
+	width: 30%;
+}
+.spec-icon-box{
+	color: white;
+	text-align: center;
+}
+.companyamount-line{
+	color: white;
+}
+.spec-icon-desc{
+	font-size: 25px;
+}
+
+.hidden{
+	display: none;
+}
+.carousel-new-buttons-prev{
+	padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+	border: none;
+	border-radius: 16px 0 0 16px;
+	font-size: 30px;
+}
+.carousel-new-buttons-next{
+	padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+	border: none;
+	border-radius: 0 16px 16px 0;
+	font-size: 30px;
+}
+.mob-menu{
+	background: rgba(0, 0, 0, 0.7);
+	border-left: 2px solid gold;
+	/* border-top: 2px solid gold; */
+	height: 100vh;
+	width: 40vh;
+	position: fixed;
+	top: 0;
+	right: -40vh;
+	z-index: 200;
+	transition: right 0.5s ease-in-out
+	
+}
+.show-mob-menu-animation{
+	
+	right: 0vh;
+}
+@keyframes showmobmenu{
+	from{
+		right: -40
+	}
+	to{
+		right: 0;
+	}
+}
+/* mob-menu{
+
+} */
+/* .MobMenuButton{
+
+
+} */
+.mob-menu{
+	padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mob-menu ul hr{
+	border: 1px solid gold;
+	width: 100%;
+}
+.menu-list-mob{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	
+	padding: 5%;
+
+}
+.gallery-tittle{
+	color: black;
+}
+.box2-pocket-tittle{
+	margin: auto;
+	width: 30%;
+	background: white;
+	color: black;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid white;
+	text-align: center;
+}
+.input-2pt{
+	width: 100%;
+}
+
+.aboutus{
+	width: 100%;
+	background-image: url(/images/bot-bg.jpg);
+	background-size: auto;
+	background-repeat: no-repeat;
+
+}
+.aboutus-box{
+	display: flex;
+	flex: 1 1;
+	height: min-content;
+}
+.aboutus-info{
+	padding: 30px;
+	color: white;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+}
+.map-location{
+	margin: 15px;
+	width: 100%;
+
+}
+a:hover{
+	color: gold;
+	transform: scale(1.1);
+}
+.info-bottom{
+	display: flex;
+	flex-direction: column;
+}
+.companyamount{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-grow: 1;
+}
+.contacts-bot{
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+	font-size: 1.6rem;
+}
+.statistic-number{
+
+	padding: 5px;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+}
+.map{
+min-width: 100%;
+min-height: 400px;
+}
+
+
+@media screen and (max-width: 1600px)  {
+	header{
+		font-size: 20px;
+	}
+	.list-of-pocket{
+		font-size: 22px;
+	}
+	.contacts-bot{
+		font-size: 1.5rem;
+	}
+	.statistic-number{
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width:1400px) {
+	#FormaHeadTittle{
+		font-size:28px;
+	}
+	.totalPrice{
+		font-size: 25px;
+	}
+	.show-pocket-desc{
+		height: 72%;
+	}
+	.froma-zayavki-box{
+		width: 70%;
+	}
+	.contacts-bot{
+		font-size: 1.3rem;
+	}
+
+	.statistic-number{
+		font-size: 1.3rem;
+	}
+
+
+}
+
+@media screen and (max-width: 1200px)  {
+	header{
+		font-size: 16px;
+	}
+	.titles{
+		font-size: 22px;
+	}
+	#FormaHeadTittle{
+		font-size:25px;
+	}
+	.totalPrice{
+		font-size: 22px;
+	}
+	.spec-icon-desc{
+		font-size: 22px;
+	}
+	.froma-zayavki-box{
+		width: 80%;
+	}
+	.box2-tittle h2{
+		font-size: 27px;
+		color: black;
+	}
+	.name-of-pocket{
+		font-size: 22px;
+	}
+	.list-of-pocket{
+		font-size: 18px;
+	}
+	.error{
+		font-size: 20px;
+	}
+	.aboutus-tittle{
+		font-size: 1.3rem;
+	}
+	.contacts-bot{
+		font-size: 1.1rem;
+	}
+	.statistic-number{
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.calculator-1part{
+		padding-top: 15%;
+	}
+	.froma-zayavki-box{
+		width: 90%;
+	}
+	.box2-tittle h2{
+		font-size: 25px;
+		color: black;
+	}
+	.box2-pocket-tittle{
+		margin: auto;
+		width: 40%;
+		background: white;
+		color: black;
+		padding: 10px;
+		border-radius: 8px;
+		border: 1px solid white;
+		text-align: center;
+	}
+	.info-bottom{
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutus-contact-item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contacts-bot{
+		font-size: 1.1rem;
+	}
+	.statistic-number{
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 880px){
+	.spec-icon-desc{
+		font-size: 18px;
+	}
+	.box2-pocket-tittle h2{
+		font-size: 22px;
+		color: black;
+	}
+	.econom-image-block:hover{
+		scale: 1.050;
+		transition: scale 0.5s;
+	}
+	.whats-up-cont-box{
+		position: fixed;
+		z-index: 99;
+		bottom: 2vh;
+		left: 2vh;
+		width: 8vh;
+	
+		animation-name: jumping-button;
+		
+	}
+	.back-to-up{
+		position: fixed;
+		z-index: 89;
+		bottom: 2vh;
+		right: 2vh;
+		width: 8vh;
+		
+		animation-name: jumping-button;
+	}
+	.info-bottom{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.contacts-bot{
+		display: flex;
+		flex-direction: column;
+	}
+	.companyamount{
+		display: flex;
+		flex-wrap: wrap	;
+		gap: 5px;
+		align-items: center;
+		justify-content: center;
+
+	}
+	.aboutus-info{
+		padding: 10px;
+	}
+}
+@media screen and (max-width:768px) {
+	.box2-pocket-tittle{
+		margin: auto;
+		width: 50%;
+		background: white;
+		color: black;
+		padding: 10px;
+		border-radius: 8px;
+		border: 1px solid white;
+		text-align: center;
+		margin-bottom: 1vh;
+	}
+	.pocket-container{
+		background: rgba(255, 255, 255, 0.5);
+		padding: 10px;
+		/* border: 4px solid rgb(164, 164, 164); */
+		border-radius: 16px;
+	}
+	.froma-zayavki-box{
+		width: 100%;
+		padding-top: 1vh;
+	}
+	a .whats-up-cont{
+		width: 100%;
+	}
+	.back-to-menu-icon{
+		width: 100%;
+	}
+	.box2-pocket-tittle h2{
+		font-size: 25px;
+		color: black;
+	}
+	#AreaType{
+		/* margin-top: 8px; */
+		/* display: flex; */
+		padding: 6px;
+		border-radius: 6px;
+		width: 40vh;
+		text-align: center;
+		float: none;
+
+	}
+	.type-selecter{
+		display: flex;
+		justify-content: center;
+	}
+	.aps-range{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#designOfProject{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo{
+		width: 80%;
+	}
+	.contacts-bot{
+		font-size: 1rem;
+	}
+	.statistic-number{
+		font-size: 1rem;
+	}
+	.aboutus-tittle{
+		font-size: 1.2rem;
+	}
+	.map-location{
+		margin: auto;
+	}
+}
+
+
+@media screen and (max-width:650px) {
+	.calculator-1part{
+		padding-top: 20%;
+	}
+	/* .mob-area-type{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	} */
+	.title-type-of-area{
+		white-space: nowrap;
+	}
+	.logo{
+		width: 100%;
+	}
+	#countRoom{
+		text-align: center;
+		width: 160px;
+		border-radius: 8px;
+		
+	}
+	.input-kv{
+		width: 160px;
+	}
+	.spec-icon-desc{
+		font-size: 14px;
+	}
+	.aboutus-box{
+		display: flex;
+		flex-direction: column;
+	}
+	.info-bottom{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.contacts-bot{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.aboutus-tittle{
+		text-align: center;
+	}
+	.aboutus-info{
+		margin: auto;
+	}
+	.companyamount{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.map-location{
+	}
+
+
+}
+@media screen and (max-width:575px){
+	/* .mob-pockets-all{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 70vh;
+	} */
+	.pocket-container{
+		background: rgba(255, 255, 255, 0.5);
+		padding: 10px;
+		/* border: 4px solid rgb(164, 164, 164); */
+		border-radius: 16px;
+		width: 80vh;
+	}
+	.froma-zayavki-box{
+		width: 100%;
+		padding: 2vh;
+	}
+	/* .logo{
+
+	} */
+}
+@media screen and (max-width:460px){
+	.froma-zayavki-box{
+		width: 100%;
+		margin-top: 2vh;
+	}
+	.logo{
+		width: 100%;
+	}
+	.companyamount{
+		flex-wrap: wrap;
+	}
+	.statistic-number{
+		padding: 0;
+	}
+}
+@media screen and (max-width:400px){
+	.froma-zayavki-box{
+		width: 100%;
+		margin-top: 10vh;
+	}
+	#countRoom{
+		width: 130px;
+		
+	}
+	.input-kv{
+		width: 130px;
+	}
+	.spec-icon-desc{
+		font-size: 12px;
+	}
+	#FormaHeadTittle{
+		font-size:22px;
+	}
+	.totalPrice{
+		font-size: 20px;
+	}
+	.titles{
+		font-size: 20px;
+	}
+	.box2-pocket-tittle h2{
+		font-size: 20px;
+		color: black;
+	}
+	.mob-titles{
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	.title-type-of-area{
+		white-space: normal;
+	}
+}
+
